@@ -6,12 +6,23 @@
   </head>
 
   <body ng-app="maashitda" ng-controller="MaashitdaController">
-    <div>
-    {{ test }}
-  </div>
-    <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
     <script src="app/app.module.js"></script>
     <script src="app/maashitda/maashitda.controller.js"></script>
+    <script src="app/services/maashitda.service.js"></script>
+    <h1 class="header">Maashitda</h1>
+    <hr class="style-two">
+    <h2 class="header" id="title">Your 'Perhaps-too-personal' Restaurant Guide</h2>
+    <hr class="style-two">
+    <div id="searchForm">
+    <label>Search: <input ng-model="searchText"></label>
+    <table id="searchTextResults">
+      <tr ng-repeat="restaurant in restaurants | filter: {keywords: searchText}" >
+        <td>{{restaurant.name}}</td>
+        <td>{{restaurant.cuisine}}</td>
+      </tr>
+    </table>
+  </div>
   </body>
 
 </html>
