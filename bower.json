@@ -1,0 +1,18 @@
+{
+  "name": "maashitda",
+  "version": "0.0.0",
+  "authors": [
+    "Sung Bin Choi <sbchoi86@gmail.com>"
+  ],
+  "description": "Simple search engine using personal restaurant data",
+  "main": "\"index.html\"",
+  "license": "MIT",
+  "homepage": "https://github.com/sungry/maashitda.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
