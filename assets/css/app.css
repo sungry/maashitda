@@ -1,19 +1,38 @@
 body {
-  background-color: white;
+background:
+ /*url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/codepen.png) bottom center no-repeat,*/
+   url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png) repeat;
 }
 
 .header {
   text-align: center;
   font-family: Copperplate;
-  color: #57A275;
+  color: #11221E;
 }
 
 #title {
-  color: #B4D455;
+  color: #57A275;
 }
 
 hr.style-two {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#searchForm {
+  text-align: center;
+}
+
+tr {
+  text-align: center;
+}
+
+td {
+  width: 300px;
+  font-family: georgia;
+}
+
+.restaurantKeys {
+  font-size: 20px;
 }

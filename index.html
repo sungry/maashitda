@@ -14,12 +14,26 @@
     <hr class="style-two">
     <h2 class="header" id="title">Your 'Perhaps-too-personal' Restaurant Guide</h2>
     <hr class="style-two">
+    <br>
     <div id="searchForm">
-    <label>Search: <input ng-model="searchText"></label>
+    <label>Keyword: <input ng-model="searchText" placeholder="brunch, cocktails,.."></label>
+    <br>
+    <br>
     <table id="searchTextResults">
-      <tr ng-repeat="restaurant in restaurants | filter: {keywords: searchText}" >
+      <tr>
+        <th>Name</th>
+        <th>Cuisine</th>
+        <th>Neighborhood</th>
+        <th>Price</th>
+        <br><br>
+      </tr>
+      <tr ng-repeat="restaurant in restaurants | filter: {keywords: searchText}" ng-style="{'text-align': center}">
+    <th ng-repeat="(key val) in restaurant">
+        <br><br>
         <td>{{restaurant.name}}</td>
         <td>{{restaurant.cuisine}}</td>
+        <td>{{restaurant.neighborhood}}</td>
+        <td>{{restaurant.price}}</td>
       </tr>
     </table>
   </div>
