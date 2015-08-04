@@ -42,6 +42,7 @@ app.get('/', function (req, res) {
 app.get('/restaurants', function (req, res) {
   res.json({restaurants: restaurants})
 });
+var port = process.env.PORT || 3000;
 
 var server = app.listen(3000, function() {
   var host = server.address().address;
