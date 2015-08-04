@@ -28,7 +28,6 @@
         <br><br>
       </tr>
       <tr ng-repeat="restaurant in restaurants | filter: {keywords: searchText}" ng-style="{'text-align': center}">
-    <th ng-repeat="(key val) in restaurant">
         <br><br>
         <td>{{restaurant.name}}</td>
         <td>{{restaurant.cuisine}}</td>

@@ -9,35 +9,37 @@
         getMockRestaurants: function() {
           var restaurants = [
           {
-            Name: '15 Romolo',
-            Cuisine: 'Contemporary American',
-            Neighborhood: 'North Beach'
-            Price: '$$',
-            Keywords: ['vibrant', 'brunch', 'food', 'bar', 'cheap', 'foodie', 'cocktails', 'burger']
+            name: '15 Romolo',
+            cuisine: 'Contemporary American',
+            neighborhood: 'North Beach',
+            price: '$$',
+            keywords: ['vibrant', 'brunch', 'food', 'bar', 'cheap', 'foodie', 'cocktails', 'burger']
           },
           {
-            Name: '1760',
-            Cuisine: 'Californian',
-            Neighborhood: 'Nob Hill'
-            Price: '$$$',
-            Keywords: ['vibrant', 'dinner', 'small plates', 'italian', 'sophisticated', 'foodie', 'delicious', 'cocktails']
+            name: '1760',
+            cuisine: 'Californian',
+            neighborhood: 'Nob Hill',
+            price: '$$$',
+            keywords: ['vibrant', 'dinner', 'small plates', 'italian', 'sophisticated', 'foodie', 'delicious', 'cocktails']
           },
           {
-            Name: 'Wise Sons Deli',
-            Cuisine: 'Delicatessen',
-            Neighborhood: 'Mission'
-            Price: '$$',
-            Keywords: ['vibrant', 'deli', 'food', 'kosher', 'casual','foodie', 'sandwich', 'reuben', 'jewish', 'corned beef', 'local' ]
+            name: 'Wise Sons Deli',
+            cuisine: 'Delicatessen',
+            neighborhood: 'Mission',
+            price: '$$',
+            keywords: ['vibrant', 'deli', 'food', 'kosher', 'casual','foodie', 'sandwich', 'reuben', 'jewish', 'corned beef', 'local' ]
           },
           {
-            Name: 'Cotogna',
-            Cuisine: 'Italian',
-            Neighborhood: 'Finance District'
-            Price: '$$$',
-            Keywords: ['vibrant', 'brunch', 'dinner', 'italian', 'food', 'bar', 'foodie', 'obama', 'wine']
+            name: 'Cotogna',
+            cuisine: 'Italian',
+            neighborhood: 'Finance District',
+            price: '$$$',
+            keywords: ['vibrant', 'brunch', 'dinner', 'italian', 'food', 'bar', 'foodie', 'obama', 'wine']
           }
           ];
+           return restaurants;
         }
+
       };
       return service;
     }
