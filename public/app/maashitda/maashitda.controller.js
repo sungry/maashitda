@@ -2,19 +2,16 @@
 (function() {
   'use strict'
 
-    angular.module('maashitda').
-  controller('MaashitdaController', MaashitdaController)
+  angular.module('maashitda').
+    controller('MaashitdaController', MaashitdaController)
 
   function MaashitdaController( $scope, MaashitdaService) {
-    $scope.restaurants = MaashitdaService.getMockRestaurants()
-  }
-
+    MaashitdaService.getMockRestaurants()
+      .then(function(response) {
+        $scope.restaurants = response.data.restaurants;
+      })
+      .catch(function(err) {
+          $scope.error = err.message;
+        });
+    }
 })();
-
-
-    // angular.module('maashitda').
-  //   controller('MaashitdaController',[
-  //     '$scope',
-  //     function($scope, MaashitdaService) {
-  //       MaashitdaService.getMockRestaurants()
-  //     }])
