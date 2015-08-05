@@ -10,8 +10,6 @@
   "homepage": "https://github.com/sungry/maashitda.git",
   "ignore": [
     "**/.*",
-    "node_modules",
-    "bower_components",
     "test",
     "tests"
   ],
