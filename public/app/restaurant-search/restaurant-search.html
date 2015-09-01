@@ -1,0 +1,20 @@
+<div id="searchForm">
+  <div class="bar">
+    <label><input ng-model="searchText" placeholder="brunch, cocktails, ..."></label>
+  </div>
+
+  <table id="searchTextResults">
+    <tr>
+      <th>Name</th>
+      <th>Cuisine</th>
+      <th>Neighborhood</th>
+      <th>Price</th>
+    </tr>
+    <tr ng-show="loaded" ng-repeat="restaurant in restaurants | filter: {keywords: searchText}" ng-style="{'text-align': center}" >
+      <td ng-bind="restaurant.name"></td>
+      <td ng-bind="restaurant.cuisine"></td>
+      <td ng-bind="restaurant.neighborhood"></td>
+      <td ng-bind="restaurant.price"></td>
+    </tr>
+  </table>
+</div>

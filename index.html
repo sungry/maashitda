@@ -3,39 +3,38 @@
   <head>
     <title>Maashitda: Your Perhaps-too-personal Restaurant Guide</title>
     <link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css">
   </head>
 
-  <body ng-app="maashitda" ng-controller="MaashitdaController">
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="app/app.module.js"></script>
-    <script src="app/maashitda/maashitda.controller.js"></script>
-    <script src="app/services/maashitda.service.js"></script>
-    <h1 class="header">Maashitda</h1>
+  <body ng-app="maashitda">
+    <h1 class="header"><a ui-sref="welcome">Maashitda</a></h1>
     <hr class="style-two">
     <h2 class="header" id="title">Your 'Perhaps-too-personal' Restaurant Guide</h2>
     <hr class="style-two">
-    <br>
-    <div id="searchForm">
-    <label>Keyword: <input ng-model="searchText" placeholder="brunch, cocktails,.."></label>
-    <br>
-    <br>
-    <table id="searchTextResults">
-      <tr>
-        <th>Name</th>
-        <th>Cuisine</th>
-        <th>Neighborhood</th>
-        <th>Price</th>
-        <br><br>
-      </tr>
-      <tr ng-repeat="restaurant in restaurants | filter: {keywords: searchText}" ng-style="{'text-align': center}">
-        <br><br>
-        <td>{{restaurant.name}}</td>
-        <td>{{restaurant.cuisine}}</td>
-        <td>{{restaurant.neighborhood}}</td>
-        <td>{{restaurant.price}}</td>
-      </tr>
-    </table>
-  </div>
+
+    <div ui-view></div>
+
+    <!-- <div id='map'></div> -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/app.routes.js"></script>
+    <script src="app/restaurant-search/restaurant-search.controller.js"></script>
+    <script src="app/services/maashitda.service.js"></script>
+<!--     <script>
+      L.mapbox.accessToken = 'pk.eyJ1IjoiZm9vZG1vbmsiLCJhIjoiMzgxM2RmYjllNGYyZjMwNjEzNmIyMzY1ZDJmOTNjZTAifQ.MDZ7X5EWnJ9etss6RzG24g';
+      var map = L.mapbox.map('map', 'mapbox.streets').setView([40, -74.50], 9);
+    </script> -->
+    <!--     <script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+<style>
+
+  #map { position:relative; top:0; bottom:0; width:100%; height:30%; }
+</style> -->
+<!--     <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
+    <script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script> -->
   </body>
 
 </html>
