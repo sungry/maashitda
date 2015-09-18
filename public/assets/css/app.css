@@ -1,7 +1,13 @@
 body {
-background:
- /*url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/codepen.png) bottom center no-repeat,*/
-   url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png) repeat;
+/*  background:
+ url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/codepen.png) bottom center no-repeat,
+   url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png) repeat;*/
+   background-color: tomato;
+
+}
+
+header {
+  background-color: white;
 }
 
 .header {
@@ -12,6 +18,11 @@ background:
 
 #title {
   color: #57A275;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 5,5,5,5;
 }
 
 hr.style-two {
@@ -71,4 +82,7 @@ td, th {
   outline: none;
   text-indent: 40px;
 }
+
+
+
 
