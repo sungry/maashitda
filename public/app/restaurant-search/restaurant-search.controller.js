@@ -6,6 +6,9 @@
     controller('RestaurantSearchController', RestaurantSearchController)
 
   function RestaurantSearchController( $scope, MaashitdaService) {
+    $scope.sortType = 'name';
+    $scope.sortReverse = false;
+    $scope.searchRestaurant = '';
     $scope.loaded = false;
     MaashitdaService.getMockRestaurants()
     .then(function(response) {

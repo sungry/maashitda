@@ -8,7 +8,8 @@ var restaurants = [
     neighborhood: 'North Beach',
     price: '$$',
     keywords: ['vibrant', 'brunch', 'food', 'bar', 'cheap', 'foodie', 'cocktails', 'burger', 'north beach'],
-    address: '15 Romolo Pl, San Francisco, CA 94133'
+    address: '15 Romolo Pl, San Francisco, CA 94133',
+    url: 'http://www.15romolo.com/'
   },
   {
     name: '1760',
@@ -16,7 +17,8 @@ var restaurants = [
     neighborhood: 'Nob Hill',
     price: '$$$',
     keywords: ['vibrant', 'dinner', 'small plates', 'italian', 'sophisticated', 'foodie', 'delicious', 'cocktails', 'nob hill', 'acquello'],
-    address: '1760 Polk St, San Francisco, CA 94109'
+    address: '1760 Polk St, San Francisco, CA 94109',
+    url: 'http://www.1760sf.com/'
   },
   {
     name: 'Wise Sons Jewish Delicatessen',
@@ -24,7 +26,8 @@ var restaurants = [
     neighborhood: 'Mission',
     price: '$$',
     keywords: ['vibrant', 'deli', 'food', 'kosher', 'casual','foodie', 'sandwich', 'reuben', 'jewish', 'corned beef', 'local', 'wise sons deli' ],
-    address: '3150 24th St, San Francisco, CA 94110'
+    address: '3150 24th St, San Francisco, CA 94110',
+    url: 'http://wisesonsdeli.com/'
   },
   {
     name: 'Cotogna',
@@ -32,7 +35,8 @@ var restaurants = [
     neighborhood: 'Finance District',
     price: '$$$',
     keywords: ['vibrant', 'brunch', 'dinner', 'italian', 'food', 'bar', 'foodie', 'obama', 'wine', 'finance district'],
-    address: '490 Pacific Ave, San Francisco, CA 94133'
+    address: '490 Pacific Ave, San Francisco, CA 94133',
+    url: 'http://cotognasf.com/'
   },
   {
     name: 'Lord Stanley',
@@ -40,7 +44,8 @@ var restaurants = [
     neighborhood: 'Nob Hill',
     price: '$$$',
     keywords: ['vibrant', 'modern', 'dinner', 'californian', 'food', 'romantic', 'foodie', 'chic', 'wine', 'nob hill'],
-    address: '2065 Polk St, San Francisco, CA 94109'
+    address: '2065 Polk St, San Francisco, CA 94109',
+    url: 'http://www.lordstanleysf.com/'
   },
   {
     name: 'Octavia',
@@ -48,7 +53,8 @@ var restaurants = [
     neighborhood: 'Pac Heights',
     price: '$$$',
     keywords: ['vibrant', 'late night', 'dinner', 'neighborhood', 'bistro', 'wine', 'foodie', 'frances', 'small plates', 'pac heights'],
-    address: '1701 Octavia St, San Francisco, CA 94109'
+    address: '1701 Octavia St, San Francisco, CA 94109',
+    url: 'http://www.lordstanleysf.com/'
   }
   ];
 

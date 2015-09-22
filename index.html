@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/welcome/welcome.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/restaurant-search/restaurant-search.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/sandstone/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
   </head>
 
   <body ng-app="maashitda">
     <header>
       <h1 class="header"><a ui-sref="welcome">Maashitda</a></h1>
-      <hr class="style-two">
+<!--       <hr class="style-two"> -->
       <h2 class="header" id="title">Your 'Perhaps-too-personal' Restaurant Guide</h2>
       <hr class="style-two">
     </header>
@@ -27,6 +29,7 @@
     <script src="app/app.routes.js"></script>
     <script src="app/restaurant-search/restaurant-search.controller.js"></script>
     <script src="app/services/maashitda.service.js"></script>
+
 <!--     <script>
       L.mapbox.accessToken = 'pk.eyJ1IjoiZm9vZG1vbmsiLCJhIjoiMzgxM2RmYjllNGYyZjMwNjEzNmIyMzY1ZDJmOTNjZTAifQ.MDZ7X5EWnJ9etss6RzG24g';
       var map = L.mapbox.map('map', 'mapbox.streets').setView([40, -74.50], 9);
